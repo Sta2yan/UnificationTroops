@@ -18,9 +18,9 @@ namespace UnificationTroops
             };
 
             List<Soldier> soldiers2 = new List<Soldier>();
-            char searchLetter = 'б';
+            char letterSearch = 'б';
 
-            soldiers2 = soldiers2.Union(soldiers1.Where(solider => solider.Name.ToLower().StartsWith(searchLetter))).ToList();
+            soldiers2 = soldiers2.Union(soldiers1.Where(solider => solider.Name.ToLower().StartsWith(letterSearch))).ToList();
 
             foreach (var soldier in soldiers2)
             {
